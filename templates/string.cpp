@@ -11,10 +11,3 @@ vector<string> split(const string& s, char del){
 	return tokens; 
 }
 
-
--Ic:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++
--Ic:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32
--Ic:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward
--Ic:\mingw\bin\../lib/gcc/mingw32/6.3.0/include
--Ic:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include
--Ic:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed
