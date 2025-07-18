@@ -1,0 +1,45 @@
+#include <bits/stdc++.h>
+#include <cstdio>
+using namespace std;
+
+#define fastio()                                                               \
+  ios::sync_with_stdio(false);                                                 \
+  cin.tie(nullptr);                                                            \
+  cout.tie(nullptr)
+#define pb push_back
+#define all(x) (x).begin(), (x).end()
+#define rall(x) (x).rbegin(), (x).rend()
+#define F first
+#define S second
+#define endl '\n'
+#define sp ' '
+
+typedef long long ll;
+typedef vector<int> vi;
+typedef pair<int, int> pii;
+void rec(ll n) {
+  if (n < 10) {
+    cout << n;
+    return;
+  }
+  rec(n / 10);
+  cout << ' ' << (n % 10);
+}
+int main() {
+#ifndef ONLINE_JUDGE
+  freopen("in.txt", "r", stdin);
+  freopen("out.txt", "w", stdout);
+#endif
+
+  fastio();
+  int tt;
+  cin >> tt;
+  while (tt--) {
+    ll n;
+    cin >> n;
+    rec(n);
+    cout << endl;
+  }
+  return 0;
+}
+
