@@ -1,21 +1,21 @@
 #include <bits/stdc++.h>
-#include <iomanip>
 using namespace std;
 
-#define pi 3.141592653
 #define fastio()                 \
     ios::sync_with_stdio(false); \
     cin.tie(nullptr);            \
     cout.tie(nullptr)
 
 typedef long long ll;
-
 int main()
 {
     fastio();
-    double r;
-    cin >> r;
-    cout << fixed << setprecision(9);
-    cout << pi * r * r << endl;
+    ll a, b, c, d;
+    cin >> a >> b >> c >> d;
+    bool cond = b * log(a) > d * log(c);
+    if (cond)
+        cout << "YES";
+    else
+        cout << "NO";
     return 0;
 }

@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
-#include <iomanip>
 using namespace std;
 
-#define pi 3.141592653
 #define fastio()                 \
     ios::sync_with_stdio(false); \
     cin.tie(nullptr);            \
@@ -13,9 +11,14 @@ typedef long long ll;
 int main()
 {
     fastio();
-    double r;
-    cin >> r;
-    cout << fixed << setprecision(9);
-    cout << pi * r * r << endl;
+    float n;
+    int nn;
+    cin >> n;
+    nn = n;
+    float sub = n - nn;
+    if (sub == 0)
+        printf("int %d", nn);
+    else
+        printf("float %d %.3f", nn, sub);
     return 0;
 }

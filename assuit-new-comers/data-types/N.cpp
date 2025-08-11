@@ -1,8 +1,8 @@
 #include <bits/stdc++.h>
 #include <iomanip>
+
 using namespace std;
 
-#define pi 3.141592653
 #define fastio()                 \
     ios::sync_with_stdio(false); \
     cin.tie(nullptr);            \
@@ -13,9 +13,16 @@ typedef long long ll;
 int main()
 {
     fastio();
-    double r;
-    cin >> r;
-    cout << fixed << setprecision(9);
-    cout << pi * r * r << endl;
+    char a;
+    cin >> a;
+    if (a >= 65 && a <= 90)
+    {
+        a += 32;
+    }
+    else
+    {
+        a -= 32;
+    }
+    cout << a;
     return 0;
 }
